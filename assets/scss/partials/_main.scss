@@ -3,12 +3,7 @@ body {
 }
 
 main {
-  width: 80%;
   margin-inline: auto;
-}
-
-h1 {
-  text-align: center;
 }
 
 form {
@@ -23,6 +18,11 @@ form {
   padding-left: 0;
   li {
     list-style: none;
-    padding-left: 0;
+    padding: $space;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    span {
+      font-weight: 500;
+    }
   }
 }

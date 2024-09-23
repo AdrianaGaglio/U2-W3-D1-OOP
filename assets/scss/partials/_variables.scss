@@ -1,5 +1,17 @@
 // font e stili
-$font: sans-serif;
+$font: "Roboto", sans-serif;
+
+$alignments: (
+  "left": left,
+  "center": center,
+  "right": right
+);
+
+@each $prop, $value in $alignments {
+  .align-#{$prop} {
+    text-align: $value;
+  }
+}
 
 // spaziature (padding e margin)
 
@@ -10,7 +22,8 @@ $margin-map: (
   sm: $space * 0.5,
   md: $space * 1,
   lg: $space * 1.5,
-  xl: $space * 2
+  xl: $space * 2,
+  "auto": auto
 );
 
 $padding-map: (
@@ -32,7 +45,11 @@ $padding-map: (
     margin-top: $value;
   }
   .margin-inline-#{$size} {
-    margin-inline: $value;
+    @if $value == "auto" {
+      margin-inline: auto;
+    } @else {
+      margin-inline: $value;
+    }
   }
   .margin-block-#{$size} {
     margin-block: $value;
@@ -72,9 +89,29 @@ $display: (
       display: $value;
       vertical-align: middle;
     }
+  } @else if $prop == "flex" {
+    .d-#{$prop} {
+      display: $value;
+      flex-wrap: wrap;
+    }
   } @else {
     .d-#{$prop} {
       display: $value;
     }
+  }
+}
+
+// widths
+
+$widths: (
+  "xs": 25%,
+  "sm": 50%,
+  "md": 75%,
+  "wide": 100%
+);
+
+@each $size, $value in $widths {
+  .w-#{$size} {
+    width: $value;
   }
 }

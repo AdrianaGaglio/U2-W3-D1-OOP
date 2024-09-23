@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -65,6 +66,18 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .margin-xy-xs {
@@ -165,6 +178,26 @@ h6 {
 
 .margin-block-xl {
   margin-block: 2rem;
+}
+
+.margin-xy-auto {
+  margin: auto;
+}
+
+.margin-bottom-auto {
+  margin-bottom: auto;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-inline-auto {
+  margin-inline: auto;
+}
+
+.margin-block-auto {
+  margin-block: auto;
 }
 
 .padding-xy-xs {
@@ -282,19 +315,31 @@ h6 {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.w-xs {
+  width: 25%;
+}
+
+.w-sm {
+  width: 50%;
+}
+
+.w-md {
+  width: 75%;
+}
+
+.w-wide {
+  width: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-  width: 80%;
   margin-inline: auto;
-}
-
-h1 {
-  text-align: center;
 }
 
 form {
@@ -310,5 +355,10 @@ form > *:not(:last-child) {
 }
 .petsList li {
   list-style: none;
-  padding-left: 0;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.petsList li span {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

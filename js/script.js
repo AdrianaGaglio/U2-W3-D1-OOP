@@ -59,6 +59,8 @@ console.log(pet1.hasSameOwner(pet3)); // esempio con false
 const createPet = document.getElementById("createPet");
 const petsContainer = document.createElement("div");
 petsContainer.classList.add("margin-top-lg");
+petsContainer.classList.add("w-md");
+petsContainer.classList.add("margin-inline-auto");
 createPet.after(petsContainer);
 const petsArray = [];
 
@@ -87,21 +89,22 @@ createPet.addEventListener("submit", (event) => {
   if (!exists) {
     petsArray.push(newPet);
   } else {
-    alert("Attenzione: Animale già inserito!!!");
+    alert("Pet already present in archive!!!");
   }
   petsContainer.innerHTML = "";
-  petsContainer.innerHTML = `<h3 class="margin-bottom-md">Pets list</h3>`;
+  petsContainer.innerHTML = `<h3 class="margin-bottom-md align-center">Pets list</h3>`;
   const petsList = document.createElement("ul");
   petsList.className = "petsList";
+  petsList.classList.add("d-flex");
   petsContainer.appendChild(petsList);
   petsArray.forEach((pet, index) => {
     const petInstance = document.createElement("li");
     petInstance.classList.add("margin-bottom-md");
     petInstance.innerHTML = `<div>
-    <p>Pet name: ${pet.petName.slice(0, 1).toUpperCase() + pet.petName.slice(1)}</p>
-    <p>Owner name: ${pet.ownerName.slice(0, 1).toUpperCase() + pet.ownerName.slice(1)}</p>
-    <p>Species: ${pet.species.slice(0, 1).toUpperCase() + pet.species.slice(1)}</p>
-    <p>Breed: ${pet.breed.slice(0, 1).toUpperCase() + pet.breed.slice(1)}</p>
+    <p><span>Pet name</span>: ${pet.petName.slice(0, 1).toUpperCase() + pet.petName.slice(1)}</p>
+    <p><span>Owner name</span>: ${pet.ownerName.slice(0, 1).toUpperCase() + pet.ownerName.slice(1)}</p>
+    <p><span>Species</span>: ${pet.species.slice(0, 1).toUpperCase() + pet.species.slice(1)}</p>
+    <p><span>Breed</span>: ${pet.breed.slice(0, 1).toUpperCase() + pet.breed.slice(1)}</p>
     </div>`;
     petsList.appendChild(petInstance);
   });
