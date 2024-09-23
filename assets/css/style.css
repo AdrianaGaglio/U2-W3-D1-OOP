@@ -1,0 +1,314 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.margin-xy-xs {
+  margin: 0.2rem;
+}
+
+.margin-bottom-xs {
+  margin-bottom: 0.2rem;
+}
+
+.margin-top-xs {
+  margin-top: 0.2rem;
+}
+
+.margin-inline-xs {
+  margin-inline: 0.2rem;
+}
+
+.margin-block-xs {
+  margin-block: 0.2rem;
+}
+
+.margin-xy-sm {
+  margin: 0.5rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 0.5rem;
+}
+
+.margin-top-sm {
+  margin-top: 0.5rem;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.5rem;
+}
+
+.margin-block-sm {
+  margin-block: 0.5rem;
+}
+
+.margin-xy-md {
+  margin: 1rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 1rem;
+}
+
+.margin-top-md {
+  margin-top: 1rem;
+}
+
+.margin-inline-md {
+  margin-inline: 1rem;
+}
+
+.margin-block-md {
+  margin-block: 1rem;
+}
+
+.margin-xy-lg {
+  margin: 1.5rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 1.5rem;
+}
+
+.margin-top-lg {
+  margin-top: 1.5rem;
+}
+
+.margin-inline-lg {
+  margin-inline: 1.5rem;
+}
+
+.margin-block-lg {
+  margin-block: 1.5rem;
+}
+
+.margin-xy-xl {
+  margin: 2rem;
+}
+
+.margin-bottom-xl {
+  margin-bottom: 2rem;
+}
+
+.margin-top-xl {
+  margin-top: 2rem;
+}
+
+.margin-inline-xl {
+  margin-inline: 2rem;
+}
+
+.margin-block-xl {
+  margin-block: 2rem;
+}
+
+.padding-xy-xs {
+  padding: 0.2rem;
+}
+
+.padding-bottom-xs {
+  padding-bottom: 0.2rem;
+}
+
+.padding-top-xs {
+  padding-top: 0.2rem;
+}
+
+.padding-inline-xs {
+  padding-inline: 0.2rem;
+}
+
+.padding-block-xs {
+  padding-block: 0.2rem;
+}
+
+.padding-xy-sm {
+  padding: 0.5rem;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 0.5rem;
+}
+
+.padding-top-sm {
+  padding-top: 0.5rem;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.5rem;
+}
+
+.padding-block-sm {
+  padding-block: 0.5rem;
+}
+
+.padding-xy-md {
+  padding: 1rem;
+}
+
+.padding-bottom-md {
+  padding-bottom: 1rem;
+}
+
+.padding-top-md {
+  padding-top: 1rem;
+}
+
+.padding-inline-md {
+  padding-inline: 1rem;
+}
+
+.padding-block-md {
+  padding-block: 1rem;
+}
+
+.padding-xy-lg {
+  padding: 1.5rem;
+}
+
+.padding-bottom-lg {
+  padding-bottom: 1.5rem;
+}
+
+.padding-top-lg {
+  padding-top: 1.5rem;
+}
+
+.padding-inline-lg {
+  padding-inline: 1.5rem;
+}
+
+.padding-block-lg {
+  padding-block: 1.5rem;
+}
+
+.padding-xy-xl {
+  padding: 2rem;
+}
+
+.padding-bottom-xl {
+  padding-bottom: 2rem;
+}
+
+.padding-top-xl {
+  padding-top: 2rem;
+}
+
+.padding-inline-xl {
+  padding-inline: 2rem;
+}
+
+.padding-block-xl {
+  padding-block: 2rem;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+form > *:not(:last-child) {
+  width: 100%;
+}
+
+.petsList {
+  padding-left: 0;
+}
+.petsList li {
+  list-style: none;
+  padding-left: 0;
+}/*# sourceMappingURL=style.css.map */
